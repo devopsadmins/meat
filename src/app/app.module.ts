@@ -19,6 +19,7 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
 import { MtReviewsComponent } from './restaurant-detail/mt-reviews/mt-reviews.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { LOCALE_ID } from '@angular/core';
+import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-cart.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { LOCALE_ID } from '@angular/core';
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [RestaurantsService, { provide: LOCALE_ID, useValue: 'pt-BR'}],
+  providers: [RestaurantsService, { provide: LOCALE_ID, useValue: 'pt-BR'}, ShoppingCartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
