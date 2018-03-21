@@ -19,7 +19,9 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
 import { MtReviewsComponent } from './restaurant-detail/mt-reviews/mt-reviews.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { LOCALE_ID } from '@angular/core';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-cart.service';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +36,14 @@ import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-
     ShoppingCartComponent,
     MenuItemComponent,
     MtReviewsComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    FormsModule
   ],
   providers: [RestaurantsService, { provide: LOCALE_ID, useValue: 'pt-BR'}, ShoppingCartService],
   bootstrap: [AppComponent]
