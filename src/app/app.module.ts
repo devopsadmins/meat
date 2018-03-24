@@ -50,8 +50,7 @@ import { RatingComponent } from './shared/rating/rating.component';
     OrderItemsComponent,
     DeliveryCostsComponent,
     OrderSummaryComponent,
-    RatingComponent,
-    SharedComponent
+    RatingComponent
   ],
   imports: [
     BrowserModule,
