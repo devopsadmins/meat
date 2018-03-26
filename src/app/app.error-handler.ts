@@ -10,7 +10,7 @@ let errorMessage: string;
     }else{
       errorMessage = error.toString();
     }
-    console.log(errorMessage);
-    return Observable.throw(errorMessage);    
+   // console.log(errorMessage);
+    return Observable.throw(errorMessage);
   }
 }
