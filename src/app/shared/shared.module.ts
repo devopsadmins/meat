@@ -8,12 +8,13 @@ import { ShoppingCartService } from '../restaurant-detail/shopping-cart/shopping
 import { RestaurantsService } from '../restaurants/restaurants.service';
 import { OrderService } from '../order/order.service';
 import { LOCALE_ID } from '@angular/core';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 
 @NgModule({
-  declarations: [ InputComponent, RadioComponent, RatingComponent],
+  declarations: [ InputComponent, RadioComponent, RatingComponent, SnackbarComponent],
   imports: [FormsModule, ReactiveFormsModule, CommonModule],
-  exports: [InputComponent, RadioComponent, RatingComponent, CommonModule, FormsModule, ReactiveFormsModule]
+  exports: [InputComponent, RadioComponent, RatingComponent, CommonModule, FormsModule, ReactiveFormsModule, SnackbarComponent]
 })
 export class SharedModule {
 

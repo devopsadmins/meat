@@ -15,10 +15,10 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
 import { MtReviewsComponent } from './restaurant-detail/mt-reviews/mt-reviews.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 
-import { FormsModule, ReactiveFormsModule, FormBuilder } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { SharedModule } from './shared/shared.module';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -38,6 +38,7 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpModule,
     RouterModule.forRoot(ROUTES, { preloadingStrategy: PreloadAllModules}),
     FormsModule,
