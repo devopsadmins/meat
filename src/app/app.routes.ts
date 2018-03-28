@@ -6,6 +6,7 @@ import { MenuComponent } from './restaurant-detail/menu/menu.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { OrderComponent } from './order/order.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 export const ROUTES: Routes = [
   { path: '', component: HomeComponent },
@@ -21,4 +22,5 @@ children: [
   { path: 'restaurants', component: RestaurantsComponent},
   { path: 'order', loadChildren: './order/order.module.ts#OrderModule'},
   { path: 'order-summary', component: OrderSummaryComponent},
+  { path: "**", component: NotFoundComponent}
 ]
