@@ -8,6 +8,7 @@ import { OrderComponent } from './order/order.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
+
 export const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', loadChildren: './about/about.module.ts#AboutModule'},
